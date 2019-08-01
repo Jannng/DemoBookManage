@@ -1,2 +1,2 @@
-# DemoBookManage
-简单的一个图书管理系统
+# JavaScript learn
+记录自己学习前端的知识
