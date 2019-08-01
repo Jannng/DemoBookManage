@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+}
+div{
+    display: flex;
+}
+
+div .block{
+    height: 60px;
+    width: 60px;
+    background-color: greenyellow;
+    margin: 20px;
+    text-align: center;
+}
