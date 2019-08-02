@@ -1,0 +1,68 @@
+#container{
+    background-color: #BBB180;
+    width: 40vw;
+    min-height:90vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#container .sidebar{
+    width: 33%;
+    align-items: stretch;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#container .sidebar .photo{
+    align-items: stretch;
+    height: 30%;
+    /* background-color: cornflowerblue; */
+}
+
+#container .sidebar .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+#container .sidebar .info{
+    align-items: stretch;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: cornflowerblue; */
+}
+
+#container .sidebar .info div::before{
+    content: "- ";
+}
+
+
+#container .content{
+    width: 65%;
+    align-items: stretch;
+    /* background-color: rgb(60, 255, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#container .content .edu{
+    align-items: stretch;
+    height: 20%;
+    /* background-color: rgb(92, 90, 117); */
+}
+
+#container .content .experience{
+    align-items: stretch;
+    height: 40%;
+    /* background-color: rgb(92, 90, 117); */
+}
+
+#container .content .certificate{
+    align-items: stretch;
+    height: 30%;
+    /* background-color: rgb(92, 90, 117); */
+}
