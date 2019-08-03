@@ -1,3 +1,13 @@
+let arr = [5, 4, 3, 2, 1];
+
+insertion(arr);
+// seletion(arr);
+// shell(arr);
+// arr = merge_sort(arr);
+// quicksort(arr,0,arr.length);
+
+print(arr);
+
 /**
  * 插入排序，将 i 索引的数据放在合适的位置
  * @param {} arr
@@ -124,13 +134,3 @@ let exch = function(arr, i, j) {
   arr[i] = arr[j];
   arr[j] = temp;
 };
-
-let arr = [5, 4, 3, 2, 1];
-
-insertion(arr);
-// seletion(arr);
-// shell(arr);
-// arr = merge_sort(arr);
-// quicksort(arr,0,arr.length);
-
-print(arr);
