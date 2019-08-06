@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter-all.component.css']
 })
 export class CounterAllComponent implements OnInit {
-
+  expression:string = '';
   constructor() { }
 
   ngOnInit() {
   }
 
   getExp(expression: string){
-    console.log(expression);
+    this.expression = expression;
   }
 
 }

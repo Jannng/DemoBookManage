@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-counter-result',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter-result.component.css']
 })
 export class CounterResultComponent implements OnInit {
+
+  @Input() expression: string = '';
 
   constructor() { }
 
