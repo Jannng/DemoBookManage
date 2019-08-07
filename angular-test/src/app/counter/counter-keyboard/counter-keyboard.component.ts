@@ -21,4 +21,9 @@ export class CounterKeyboardComponent implements OnInit {
     this.expression += char;
     this.inputNumber.emit(this.expression);
   }
+
+  clear(){
+    this.expression = "";
+    this.inputNumber.emit(this.expression);
+  }
 }
