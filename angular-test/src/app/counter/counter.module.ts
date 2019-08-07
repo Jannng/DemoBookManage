@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CounterAllComponent } from './counter-all/counter-all.component';
 import { CounterKeyboardComponent } from './counter-keyboard/counter-keyboard.component';
 import { CounterResultComponent } from './counter-result/counter-result.component';
+import { CounterService } from './services/counter.service';
 
 
 
@@ -11,6 +12,7 @@ import { CounterResultComponent } from './counter-result/counter-result.componen
   imports: [
     CommonModule
   ],
-  exports: [CounterAllComponent]
+  exports: [CounterAllComponent],
+  providers: [CounterService]
 })
 export class CounterModule { }

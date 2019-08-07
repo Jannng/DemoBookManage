@@ -9,6 +9,8 @@ export class CounterResultComponent implements OnInit {
 
   @Input() expression: string = '';
 
+  @Input() result: number;
+
   constructor() { }
 
   ngOnInit() {

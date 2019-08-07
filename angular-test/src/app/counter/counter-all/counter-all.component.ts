@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CounterService } from '../services/counter.service';
 
 @Component({
   selector: 'app-counter-all',
@@ -7,13 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterAllComponent implements OnInit {
   expression:string = '';
-  constructor() { }
+
+  result:string;
+
+  constructor(private counterSvc:CounterService) {
+    
+  }
 
   ngOnInit() {
   }
 
   getExp(expression: string){
     this.expression = expression;
+  }
+
+  getResult(){
+    this.result = this.counterSvc.toReversePolish(this.expression);
   }
 
 }

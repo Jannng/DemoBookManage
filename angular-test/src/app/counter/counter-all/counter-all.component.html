@@ -1,2 +1,2 @@
-<app-counter-result [expression]="expression"></app-counter-result>
-<app-counter-keyboard (inputNumber)="getExp($event)"></app-counter-keyboard>
+<app-counter-result [expression]="expression" [result]="result"></app-counter-result>
+<app-counter-keyboard (inputNumber)="getExp($event)" (result)="getResult($event)"></app-counter-keyboard>

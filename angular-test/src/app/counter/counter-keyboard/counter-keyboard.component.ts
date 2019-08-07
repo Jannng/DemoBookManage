@@ -12,6 +12,8 @@ export class CounterKeyboardComponent implements OnInit {
 
   @Output() inputNumber = new EventEmitter<string>();
 
+  @Output() result = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
@@ -25,5 +27,9 @@ export class CounterKeyboardComponent implements OnInit {
   clear(){
     this.expression = "";
     this.inputNumber.emit(this.expression);
+  }
+
+  getResult(){
+    this.result.emit(this.expression);
   }
 }

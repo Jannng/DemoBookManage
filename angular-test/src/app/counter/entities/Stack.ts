@@ -1,15 +1,41 @@
-export class Stack<T>{
-    data: T[];
+const CAPACITY:number=10;
+export class Stack<T> {    
+  private elements:Array<T>;
+  private _size:number;
+  
+  public constructor(capacity:number = CAPACITY){
+      this.elements = new Array<T>(capacity);
+      this._size = 0;
+  }
 
-    pop(){
-        return this.data.pop;
-    }
+  public push(o:T){
+      var len = this.elements.length;
+      if(this._size >= len){
+          let temp = new Array<T>(len);
+          this.elements=this.elements.concat(temp);
+      }
+      this.elements[this._size++]=o;
+  }
 
-    push(element: T){
-        this.data.push;
-    }
+  public pop():T{
+      return this.elements[--this._size];
+  }
 
-    isEmpty(){
-        return this.data.length == 0;
-    }
+  public peek():T{
+      return this.elements[this._size-1];
+  }
+
+  public size():number{
+      return this._size;
+  }
+  
+  public empty():boolean{
+      return this._size==0;
+  }
+
+  public clear(capacity:number = CAPACITY){
+      delete this.elements;
+      this.elements = new Array(capacity);
+      this._size = 0;
+  }
 }
